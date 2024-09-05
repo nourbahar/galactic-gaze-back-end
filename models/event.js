@@ -25,6 +25,9 @@ const eventSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  video: {
+    type: String
+  },
   observations: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Observation'
